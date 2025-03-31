@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - Hokejový Plánovač</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Hokejový Plánovač</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="exercises.html">Cviky</a></li>
+          <li><a href="training-builder.html">Sestavit trénink</a></li>
+          <li><a href="about.html">O mně</a></li>
+          <li><a href="contact.html" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="contact">
+      <div class="container">
+        <h1>Kontaktujte mě</h1>
+        <p>Máte dotazy, nápady nebo chcete sdílet svůj feedback? Napište mi a rád se ozvu.</p>
+        <form id="contact-form">
+          <label for="name">Jméno:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Zpráva:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          
+          <button type="submit">Odeslat</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Hokejový Plánovač. Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
