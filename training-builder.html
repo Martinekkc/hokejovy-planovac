@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sestavit trénink - Hokejový Plánovač</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Hokejový Plánovač</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="exercises.html">Cviky</a></li>
+          <li><a href="training-builder.html" class="active">Sestavit trénink</a></li>
+          <li><a href="about.html">O mně</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="training-builder">
+      <div class="container">
+        <h1>Sestavte si trénink</h1>
+        <div class="builder">
+          <div class="exercises-list">
+            <h2>Dostupné cvičení</h2>
+            <!-- Každá karta obsahuje data cvičení, která se přidají do tréninkového plánu -->
+            <div class="card" data-exercise='{"name": "Křížové bruslení", "description": "Procvičování rychlých změn směru a křížení bruslení."}'>
+              <h3>Křížové bruslení</h3>
+              <p>Procvičování rychlých změn směru a křížení bruslení.</p>
+              <button class="add-btn">Přidat do tréninku</button>
+            </div>
+            <div class="card" data-exercise='{"name": "Střelecký kroužek", "description": "Zlepšení střelecké techniky z různých úhlů."}'>
+              <h3>Střelecký kroužek</h3>
+              <p>Zlepšení střelecké techniky z různých úhlů.</p>
+              <button class="add-btn">Přidat do tréninku</button>
+            </div>
+            <div class="card" data-exercise='{"name": "Obranný postoj", "description": "Zdokonalení obranného postoje a reakčních schopností."}'>
+              <h3>Obranný postoj</h3>
+              <p>Zdokonalení obranného postoje a reakčních schopností.</p>
+              <button class="add-btn">Přidat do tréninku</button>
+            </div>
+            <div class="card" data-exercise='{"name": "Rychlostní trénink", "description": "Krátké sprinty a změny směru pro zvýšení akcelerace."}'>
+              <h3>Rychlostní trénink</h3>
+              <p>Krátké sprinty a změny směru pro zvýšení akcelerace.</p>
+              <button class="add-btn">Přidat do tréninku</button>
+            </div>
+            <div class="card" data-exercise='{"name": "Taktická schéma", "description": "Trénink herního rozestavení a týmové spolupráce."}'>
+              <h3>Taktická schéma</h3>
+              <p>Trénink herního rozestavení a týmové spolupráce.</p>
+              <button class="add-btn">Přidat do tréninku</button>
+            </div>
+          </div>
+          <div class="plan">
+            <h2>Váš tréninkový plán</h2>
+            <ul id="plan-list">
+              <!-- Přidaná cvičení se zde zobrazí -->
+            </ul>
+            <button id="clear-plan">Vymazat plán</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Hokejový Plánovač. Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
